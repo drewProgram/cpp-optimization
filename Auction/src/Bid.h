@@ -10,6 +10,10 @@ private:
     float value;
 public:
     Bid(User user, float value);
+    // copy constructor
+    Bid(const Bid&) = default;
+    // deleting copy constructor
+    // Bid(const Bid&) = delete;
 
     float GetValue() const;
     std::string GetUsername() const;

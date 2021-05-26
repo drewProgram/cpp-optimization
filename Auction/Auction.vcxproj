@@ -144,6 +144,7 @@
     <ClCompile Include="src\Auction.cpp" />
     <ClCompile Include="src\Auctioneer.cpp" />
     <ClCompile Include="src\Bid.cpp" />
+    <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\User.cpp" />
     <ClCompile Include="tests\auction-test.cpp" />
     <ClCompile Include="tests\auctioneer-test.cpp" />
