@@ -3,7 +3,7 @@
 #include <memory>
 #include "User.h"
 
- overloading new operator to watch when something is allocated on heap
+// overloading new operator to watch when something is allocated on heap
 void* operator new(size_t bytes)
 {
 	std::cout << "Allocating " << bytes << " bytes" << std::endl;
