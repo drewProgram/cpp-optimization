@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7dbf85f9-9229-4ac9-bfc9-65b5c4b71d13}</ProjectGuid>
-    <RootNamespace>Auction</RootNamespace>
+    <ProjectGuid>{0bb975b8-53cc-4bea-9b1e-0b3d23fbcab9}</ProjectGuid>
+    <RootNamespace>MoveSemantics</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -116,7 +116,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,7 +130,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,17 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\Auction.cpp" />
-    <ClCompile Include="src\Auctioneer.cpp" />
-    <ClCompile Include="src\Bid.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\User.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="src\Auction.h" />
-    <ClInclude Include="src\Auctioneer.h" />
-    <ClInclude Include="src\Bid.h" />
-    <ClInclude Include="src\User.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

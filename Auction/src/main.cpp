@@ -3,12 +3,12 @@
 #include <memory>
 #include "User.h"
 
-// overloading new operator to watch when something is allocated on heap
-//void* operator new(size_t bytes)
-//{
-//	std::cout << "Allocating " << bytes << " bytes" << std::endl;
-//	return malloc(bytes);
-//}
+ overloading new operator to watch when something is allocated on heap
+void* operator new(size_t bytes)
+{
+	std::cout << "Allocating " << bytes << " bytes" << std::endl;
+	return malloc(bytes);
+}
 
 void PrintName(std::string_view name)
 {
@@ -20,7 +20,7 @@ void PrintUserName(std::shared_ptr<User> user)
 	std::cout << user->GetName() << std::endl;
 }
 
-int main2()
+int main()
 {
 	std::cout << "--------------" << std::endl;
 	// small strings are allocated on stack (Small String Optimization)
